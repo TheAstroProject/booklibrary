@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Your Personal Library</h1>
+    </div>
+    <div class="buttonContainer">
+        <button id="showFormButton">Add New Book</button>
+    </div>
+    <form id="bookForm" class="book-form">
+        <div class="fieldGroup">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter book title" required>
+        </div>
+        <div class="fieldGroup">
+            <label for="author">Author:</label>
+            <input type="text" id="author" placeholder="Enter author name" required>
+        </div>
+        <div class="fieldGroup">
+            <label for="pages"># of Pages:</label>
+            <input type="text" id="pages" placeholder="Enter number of pages" required min="1">
+        </div>
+        <div class="fieldGroup checkbox-group">
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read">
+        </div>
+
+        <button id="addBookButton">Add a Book</button>
+    </form>
+
+    <div class="error-container">
+        <p id="formError" class="form-error" hidden>Please fill in all fields.</p>
+    </div>
+
+    <section id="tableContainer"></section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
